@@ -1,0 +1,15 @@
+<div class="flex-col items-center w-full">
+  <div class="text-center py-12">
+    <h1 class="text-4xl font-bold">Bienvenue sur Bibliotrack</h1>
+    <h2 class="text-2xl font-semibold">
+      Le gestionnaire de la bibliothèque d'Herblay
+    </h2>
+  </div>
+
+  <div class="flex justify-center gap-4">
+    <app-accueil-buttons
+      *ngFor="let item of buttonlist"
+      [accueilButton]="item"
+    ></app-accueil-buttons>
+  </div>
+</div>
